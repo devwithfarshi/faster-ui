@@ -15,7 +15,10 @@ const Header = () => {
           </figure>
           <Navigation />
           <div className="flex items-center gap-[19px]">
-            <Link href="#" className="text-base text-paragraph">
+            <Link
+              href="#"
+              className="text-base text-paragraph hover:text-foreground"
+            >
               Sign In
             </Link>
             <Link href="#">
