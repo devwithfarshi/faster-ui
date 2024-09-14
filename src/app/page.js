@@ -1,9 +1,9 @@
-import Container from "@/components/common/Container";
+import Banner from "@/components/screens/Home/Banner";
 
 const Home = () => {
   return (
     <>
-      <Container>start</Container>
+      <Banner />
     </>
   );
 };

@@ -19,6 +19,9 @@ module.exports = {
       fontFamily: {
         raleway: ["Raleway", "sans-serif"],
       },
+      borderRadius: {
+        10: "10px",
+      },
     },
   },
   plugins: [],
