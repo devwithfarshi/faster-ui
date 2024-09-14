@@ -8,8 +8,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        primary: {
+          DEFAULT: "var(--primary)",
+          light: "var(--primary-light)",
+        },
         background: "var(--background)",
         foreground: "var(--foreground)",
+        paragraph: "var(--paragraph)",
+      },
+      fontFamily: {
+        raleway: ["Raleway", "sans-serif"],
       },
     },
   },
