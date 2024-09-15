@@ -10,8 +10,9 @@ const PortfolioSlider = ({ sliderRef }) => {
     <div className="mt-[57px]">
       <Swiper
         ref={sliderRef}
-        spaceBetween={32 + 34 * 2}
-        slidesPerView={2.4}
+        spaceBetween={32 + 34 * 6}
+        slidesPerView={2}
+        centeredSlides={true}
         loop={true}
       >
         {portfolioProjects.map((project) => (

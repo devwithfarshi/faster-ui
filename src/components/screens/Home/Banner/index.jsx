@@ -7,7 +7,7 @@ import BannerBg from "./BannerBg";
 const Banner = () => {
   return (
     <section className="relative h-[645px] flex items-center justify-center">
-      <div className="rotate-[46.19deg]">
+      <div className="rotate-[46.19deg] ">
         <BannerBg />
       </div>
       <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
