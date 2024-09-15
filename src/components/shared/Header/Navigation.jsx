@@ -11,7 +11,7 @@ const Navigation = () => {
         <li key={item.id}>
           <Link
             href={item.path}
-            className={`font-inter hover:text-foreground  ${
+            className={`hover:text-foreground  ${
               isActive(item.path)
                 ? "font-bold text-foreground"
                 : "text-paragraph"

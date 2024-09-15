@@ -21,12 +21,12 @@ const ServiceCard = ({ service }) => {
           />
         </figure>
         <div className="mt-[18px]">
-          <h4 className="font-inter font-semibold text-[19.77px]">
+          <h4 className=" font-semibold text-[19.77px]">
             {service.title}
           </h4>
         </div>
         <div className="mt-[19px] max-w-[231px]">
-          <p className="font-inter text-sm text-paragraph">
+          <p className=" text-sm text-paragraph">
             {service.description}
           </p>
         </div>

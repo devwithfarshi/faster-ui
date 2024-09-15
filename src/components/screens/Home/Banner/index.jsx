@@ -7,7 +7,7 @@ const Banner = () => {
     <section className="relative h-screen pt-[58px] lg:pt-[168px] bg-[url('/images/banner-bg.svg')] bg-contain bg-no-repeat bg-center">
       <Container>
         <div className="max-w-[764px] mx-auto text-center space-y-9">
-          <h1 className="font-bold text-[73.34px] leading-tight">
+          <h1 className="font-raleway font-bold text-[73.34px] leading-tight">
             Awesome UI Dark Template for Webflow Agency
           </h1>
           <Link href="#" className="inline-block">
