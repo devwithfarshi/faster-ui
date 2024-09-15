@@ -25,10 +25,9 @@ const socialIcons = [
     icon: "/icons/common/dribble.svg",
   },
 ];
-
 const Footer = () => {
   return (
-    <section className="relative pt-[156px] pb-[120px]">
+    <section className="relative pt-[156px] ">
       <footer>
         <Container>
           <div className="bg-white rounded-[40px] px-[72px] pt-[84px] pb-[78px]">

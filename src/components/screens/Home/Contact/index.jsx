@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const ContactUs = () => {
   return (
-    <section className="mt-[124px]">
+    <section>
       <Container className="relative">
         <figure className="absolute right-0 top-0 -translate-y-1/4 w-[235px] h-[218px]">
           <Image src={"/images/Contact/contact-bg.svg"} fill />
