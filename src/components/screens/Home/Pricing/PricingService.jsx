@@ -18,7 +18,12 @@ const PricingService = () => {
           {[...new Array(6).keys()].map((item) => (
             <li key={item} className="flex items-center gap-3">
               <figure className="shrink-0">
-                <Image width={24} height={24} src={"/icons/common/check.svg"} />
+                <Image
+                  width={24}
+                  height={24}
+                  src={"/icons/common/check.svg"}
+                  alt="check Icon"
+                />
               </figure>
               <p className="text-sm">Unlimited requests</p>
             </li>

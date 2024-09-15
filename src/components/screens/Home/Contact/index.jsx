@@ -9,7 +9,7 @@ const ContactUs = () => {
     <section>
       <Container className="relative">
         <figure className="absolute right-0 top-0 -translate-y-1/4 w-[235px] h-[218px]">
-          <Image src={"/images/Contact/contact-bg.svg"} fill />
+          <Image src={"/images/Contact/contact-bg.svg"} alt="contact-bg" fill />
         </figure>
         <div className="text-center">
           <Heading text={"Let’s Get in Touch"} />
