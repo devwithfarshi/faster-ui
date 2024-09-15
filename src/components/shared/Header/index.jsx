@@ -7,7 +7,7 @@ import Button from "@/components/common/Button";
 
 const Header = () => {
   return (
-    <header className="h-[68px] bg-transparent flex items-center fixed left-0 top-4 w-full z-40">
+    <header className="h-[68px] bg-transparent flex items-center absolute left-0 top-4 w-full z-40">
       <Container className="w-full h-full">
         <div className="flex items-center justify-between w-full h-full">
           <figure>
