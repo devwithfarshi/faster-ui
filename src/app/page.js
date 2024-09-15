@@ -1,5 +1,6 @@
 import ReviewSectionCard from "@/components/common/ReviewSectionCard";
 import Banner from "@/components/screens/Home/Banner";
+import ContactUs from "@/components/screens/Home/Contact";
 import FAQ from "@/components/screens/Home/FAQ";
 import Portfolio from "@/components/screens/Home/Portfolio";
 import Pricing from "@/components/screens/Home/Pricing";
@@ -14,6 +15,8 @@ const Home = () => {
       <ReviewSectionCard />
       <Pricing />
       <FAQ />
+      <div className="mt-[111px] h-px bg-borderAccent"></div>
+      <ContactUs />
       <div className="mb-10"></div>
     </>
   );

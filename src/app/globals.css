@@ -11,6 +11,7 @@
   --foreground: #252432;
   --paragraph: #8987a1;
   --border-secondary: #e4eaf8;
+  --border-accent: #d6dded;
 }
 
 @layer base {

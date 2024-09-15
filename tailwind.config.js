@@ -16,6 +16,7 @@ module.exports = {
         foreground: "var(--foreground)",
         paragraph: "var(--paragraph)",
         borderSecondary: "var(--border-secondary)",
+        borderAccent: "var(--border-accent)",
       },
       fontFamily: {
         raleway: ["Raleway", "sans-serif"],
