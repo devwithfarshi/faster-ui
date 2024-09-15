@@ -10,6 +10,7 @@
   --background: #f5f8ff;
   --foreground: #252432;
   --paragraph: #8987a1;
+  --border-secondary: #e4eaf8;
 }
 
 @layer base {
