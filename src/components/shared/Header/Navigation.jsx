@@ -6,7 +6,7 @@ const Navigation = () => {
   const pathName = usePathname();
   const isActive = (path) => pathName === path;
   return (
-    <ul className="w-[499px] flex justify-center items-center gap-[47px] rounded-[20px] border border-white bg-white/60 h-full ">
+    <ul className="w-[499px] flex justify-center items-center gap-12 rounded-[20px] border border-white bg-white/60 h-full ">
       {routeHeaderData.map((item) => (
         <li key={item.id}>
           <Link
