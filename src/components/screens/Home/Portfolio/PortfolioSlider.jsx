@@ -14,6 +14,12 @@ const PortfolioSlider = ({ sliderRef }) => {
         slidesPerView={2}
         centeredSlides={true}
         loop={true}
+        breakpoints={{
+          1600: {
+            spaceBetween: 32 + 34 * 2,
+            slidesPerView: 2.4,
+          },
+        }}
       >
         {portfolioProjects.map((project) => (
           <SwiperSlide key={project.id}>
