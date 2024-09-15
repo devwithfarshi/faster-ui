@@ -1,3 +1,4 @@
+import Para from "@/components/common/Para";
 import Image from "next/image";
 
 const ServiceCard = ({ service }) => {
@@ -21,14 +22,10 @@ const ServiceCard = ({ service }) => {
           />
         </figure>
         <div className="mt-[18px]">
-          <h4 className=" font-semibold text-[19.77px]">
-            {service.title}
-          </h4>
+          <h4 className=" font-semibold text-[19.77px]">{service.title}</h4>
         </div>
         <div className="mt-[19px] max-w-[231px]">
-          <p className=" text-sm text-paragraph">
-            {service.description}
-          </p>
+          <Para text={service.description} />
         </div>
       </div>
       {service?.image && (

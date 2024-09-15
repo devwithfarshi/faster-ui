@@ -1,5 +1,6 @@
 import Container from "@/components/common/Container";
 import Heading from "@/components/common/Heading";
+import Para from "@/components/common/Para";
 import Image from "next/image";
 const PortfolioHeader = ({ handlePrev, handleNext }) => {
   return (
@@ -20,10 +21,10 @@ const PortfolioHeader = ({ handlePrev, handleNext }) => {
           <div className="text-center">
             <Heading text={"Check our Work"} />
             <div className="max-w-[449px] mt-8">
-              <p className="text-sm text-paragraph">
-                Take a look at some of our recent projects to see how we've
-                helped businesses like yours succeed online.
-              </p>
+              <Para
+                text=" Take a look at some of our recent projects to see how we've helped
+            businesses like yours succeed online."
+              />
             </div>
           </div>
           <button
