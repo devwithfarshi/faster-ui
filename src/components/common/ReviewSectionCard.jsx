@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const ReviewSectionCard = () => {
   return (
-    <div className="my-[86px] max-w-[409px] mx-auto rounded-[22px] p-[21px] bg-white border border-borderSecondary flex items-center gap-[13px]">
+    <div className="my-12 lg:my-[86px] mx-4 max-w-[409px] lg:mx-auto rounded-[22px] p-[21px] bg-white border border-borderSecondary flex items-center gap-[13px] flex-col lg:flex-row">
       <ul className="flex items-center">
         {useReviewers.map((user) => (
           <li
@@ -19,12 +19,12 @@ const ReviewSectionCard = () => {
           </li>
         ))}
       </ul>
-      <div>
+      <div className="flex flex-col-reverse lg:flex-col gap-y-1">
         <p className="text-paragraph text-base">
           <span className="font-semibold text-foreground">5.0</span> Based on
           <span className="font-semibold text-foreground"> 145</span> Reviews
         </p>
-        <div className="mt-1 flex gap-[6.36px] items-center">
+        <div className=" flex justify-center lg:justify-normal gap-[6.36px] items-center">
           {[...new Array(5).keys()].map((item) => (
             <figure key={item}>
               <Image

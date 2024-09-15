@@ -6,14 +6,14 @@ import BannerBg from "./BannerBg";
 
 const Banner = () => {
   return (
-    <section className="relative h-[645px] flex items-center justify-center">
-      <div className="rotate-[46.19deg] ">
+    <section className="pt-28 lg:pt-0 relative  xl:h-[645px] flex items-center justify-center">
+      <div className="rotate-[46.19deg] hidden lg:block">
         <BannerBg />
       </div>
-      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+      <div className="lg:absolute lg:left-1/2 lg:top-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 w-full">
         <Container>
-          <div className="max-w-[764px] mx-auto text-center space-y-9">
-            <h1 className="font-raleway font-bold text-[73.34px] leading-tight">
+          <div className="max-w-[764px] mx-auto text-center space-y-9 w-full">
+            <h1 className="font-raleway font-bold text-4xl xl:text-[73.34px] leading-tight">
               Awesome UI Dark Template for Webflow Agency
             </h1>
             <Link href="#" className="inline-block">

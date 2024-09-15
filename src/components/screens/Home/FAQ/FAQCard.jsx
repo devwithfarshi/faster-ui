@@ -3,15 +3,17 @@ import Image from "next/image";
 
 const FAQCard = ({ faq, accordionOpen, setAccordionOpen }) => {
   return (
-    <div className="py-6 pl-[30px] pr-[17px] bg-white rounded-10 max-h-[137px]">
+    <div className="py-6 pl-[30px] pr-[17px] bg-white rounded-10 lg:max-h-[137px]">
       <button
         onClick={() =>
           setAccordionOpen(accordionOpen !== faq.id ? faq.id : null)
         }
-        className="flex items-center justify-between w-full"
+        className="flex items-start justify-between w-full"
       >
-        <h5 className="font-bold font-raleway  text-lg">{faq.question}</h5>
-        <figure className="relative size-6">
+        <h5 className="font-bold font-raleway text-base lg:text-lg text-start">
+          {faq.question}
+        </h5>
+        <figure className="relative size-6 shrink-0">
           <Image
             src={
               accordionOpen !== faq.id

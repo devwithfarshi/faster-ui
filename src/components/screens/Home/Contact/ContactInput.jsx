@@ -21,7 +21,7 @@ const ContactInput = ({
           value={value}
           onChange={onChange}
           placeholder={placeholder}
-          className="h-[222px] py-5 ps-8 bg-transparent border border-borderAccent rounded-10 resize-none"
+          className="h-[222px] py-3 lg:py-5 ps-4 lg:ps-8 bg-white/60 backdrop-blur-sm lg:bg-transparent border border-borderAccent rounded-10 resize-none"
         />
       ) : (
         <input
@@ -31,7 +31,7 @@ const ContactInput = ({
           onChange={onChange}
           placeholder={placeholder}
           type={type}
-          className="h-[70px] py-5 ps-8 bg-transparent border border-borderAccent rounded-10"
+          className="lg:h-[70px] py-3 lg:py-5 ps-4 lg:ps-8 bg-white/60 backdrop-blur-sm lg:bg-transparent border border-borderAccent rounded-10"
         />
       )}
     </div>

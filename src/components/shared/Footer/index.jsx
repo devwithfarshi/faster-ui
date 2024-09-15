@@ -30,11 +30,13 @@ const Footer = () => {
     <section className="relative pt-[156px] ">
       <footer>
         <Container>
-          <div className="bg-white rounded-[40px] px-[72px] pt-[84px] pb-[78px]">
-            <figure>
-              <Image src={"/logo.svg"} alt="Logo" width={187} height={41.02} />
+          <div className="bg-white rounded-lg lg:rounded-[40px] p-8 lg:px-[72px] pt-8 lg:pt-[84px] pb-[78px]">
+            <figure className="w-[150px] h-[35px] xl:w-[170px] xl:h-[37.29px] relative">
+              <Link href={"/"}>
+                <Image src="/logo.svg" alt="Logo" fill />
+              </Link>
             </figure>
-            <div className="mt-[37.98px] flex justify-between items-start">
+            <div className="mt-[37.98px] flex justify-between items-start flex-col lg:flex-row gap-y-4">
               <div className="max-w-[356px]">
                 <Para
                   text={
@@ -42,19 +44,19 @@ const Footer = () => {
                   }
                 />
               </div>
-              <ul className="flex items-center gap-12 ">
+              <ul className="flex items-center gap-4 lg:gap-12 ">
                 {routeHeaderData.map((route) => (
                   <li
                     key={route.id}
-                    className="text-base text-paragraph hover:text-foreground"
+                    className="text-sm lg:text-base text-paragraph hover:text-foreground"
                   >
                     <Link href={route.path}>{route.title}</Link>
                   </li>
                 ))}
               </ul>
             </div>
-            <div className="mt-9 flex justify-between items-end">
-              <div className="flex items-center gap-[11px]">
+            <div className="mt-9 flex justify-between lg:items-end flex-col md:flex-row gap-y-4">
+              <div className="flex  items-center gap-[11px]">
                 <figure className="shrink-0">
                   <Image
                     src={"/icons/common/heart.svg"}

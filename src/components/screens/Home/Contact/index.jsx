@@ -8,7 +8,7 @@ const ContactUs = () => {
   return (
     <section>
       <Container className="relative">
-        <figure className="absolute right-0 top-0 -translate-y-1/4 w-[235px] h-[218px]">
+        <figure className="absolute right-0 top-0 -translate-y-1/4 w-[235px] h-[218px] -z-10">
           <Image src={"/images/Contact/contact-bg.svg"} alt="contact-bg" fill />
         </figure>
         <div className="text-center">

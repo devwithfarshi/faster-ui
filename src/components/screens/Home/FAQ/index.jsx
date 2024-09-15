@@ -9,13 +9,13 @@ import Image from "next/image";
 const FAQ = () => {
   const [accordionOpen, setAccordionOpen] = useState(null);
   return (
-    <section className="mt-[174px] ">
+    <section className="lg:mt-[174px] ">
       <Container className="relative">
-        <figure className="absolute w-[765px] h-[726px] -z-10 left-0 top-0 -translate-x-1/2 -translate-y-1/4">
+        <figure className="hidden lg:block absolute w-[765px] h-[726px] -z-10 left-0 top-0 -translate-x-1/2 -translate-y-1/4">
           <Image src={"/images/faq/faq-bg.svg"} alt="faq-bg" fill />
         </figure>
-        <div className="flex gap-[69px]">
-          <div className="mt-[100px]">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-[69px]">
+          <div className="mt-12 lg:mt-[100px]">
             <Heading text={"Frequently Asked Questions"} />
           </div>
           <div className="space-y-4">

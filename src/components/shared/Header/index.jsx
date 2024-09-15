@@ -7,11 +7,13 @@ import Button from "@/components/common/Button";
 
 const Header = () => {
   return (
-    <header className="h-[68px] bg-transparent flex items-center absolute left-0 top-4 w-full z-40">
+    <header className="h-[68px] bg-transparent flex items-center absolute left-0 top-4 w-full z-40 ">
       <Container className="w-full h-full">
         <div className="flex items-center justify-between w-full h-full">
-          <figure>
-            <Image src="/logo.svg" alt="Logo" width={170} height={37.29} />
+          <figure className="w-[150px] h-[35px] xl:w-[170px] xl:h-[37.29px] relative">
+            <Link href={"/"}>
+              <Image src="/logo.svg" alt="Logo" fill />
+            </Link>
           </figure>
           <Navigation />
           <div className="flex items-center gap-[19px]">
@@ -25,7 +27,7 @@ const Header = () => {
               <Button
                 text="Sign up"
                 variant="primary"
-                className="w-[132px] py-3"
+                className="w-[100px] lg:w-[132px] py-3"
               />
             </Link>
           </div>
