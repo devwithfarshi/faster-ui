@@ -1,4 +1,97 @@
+import Container from "@/components/common/Container";
+import Para from "@/components/common/Para";
+import { routeHeaderData } from "@/data/route.data";
+import Image from "next/image";
+import Link from "next/link";
+const socialIcons = [
+  {
+    id: 1,
+    url: "#",
+    icon: "/icons/common/instagram.svg",
+  },
+  {
+    id: 2,
+    url: "#",
+    icon: "/icons/common/in.svg",
+  },
+  {
+    id: 3,
+    url: "#",
+    icon: "/icons/common/tiktok.svg",
+  },
+  {
+    id: 4,
+    url: "#",
+    icon: "/icons/common/dribble.svg",
+  },
+];
+
 const Footer = () => {
-  return <div>Footer</div>;
+  return (
+    <section className="relative pt-[156px] pb-[120px]">
+      <footer>
+        <Container>
+          <div className="bg-white rounded-[40px] px-[72px] pt-[84px] pb-[78px]">
+            <figure>
+              <Image src={"/logo.svg"} alt="Logo" width={187} height={41.02} />
+            </figure>
+            <div className="mt-[37.98px] flex justify-between items-start">
+              <div className="max-w-[356px]">
+                <Para
+                  text={
+                    "Ready to elevate your online presence? Contact us today to discuss your project and discover how we can bring your vision to life."
+                  }
+                />
+              </div>
+              <ul className="flex items-center gap-12 ">
+                {routeHeaderData.map((route) => (
+                  <li
+                    key={route.id}
+                    className="text-base text-paragraph hover:text-foreground"
+                  >
+                    <Link href={route.path}>{route.title}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="mt-9 flex justify-between items-end">
+              <div className="flex items-center gap-[11px]">
+                <figure className="shrink-0">
+                  <Image
+                    src={"/icons/common/heart.svg"}
+                    alt="heart"
+                    width={24}
+                    height={24}
+                  />
+                </figure>
+                <Para text="Made with love powered by inkyy.com" />
+              </div>
+              <ul className="flex gap-2.5">
+                {socialIcons.map((icon) => (
+                  <li
+                    key={icon.id}
+                    className="size-12 bg-background flex items-center justify-center"
+                  >
+                    <a
+                      href={icon.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Image
+                        src={icon.icon}
+                        alt={icon.icon}
+                        width={32}
+                        height={32}
+                      />
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </Container>
+      </footer>
+    </section>
+  );
 };
 export default Footer;

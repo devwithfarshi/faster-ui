@@ -1,5 +1,6 @@
 import Header from "@/components/shared/Header";
 import "./globals.css";
+import Footer from "@/components/shared/Footer";
 
 export const metadata = {
   title: "Faster UI",
@@ -12,6 +13,7 @@ export default function RootLayout({ children }) {
       <body>
         <Header />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

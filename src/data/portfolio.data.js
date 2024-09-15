@@ -8,13 +8,25 @@ export const portfolioProjects = [
   {
     id: 2,
     title: "Project 2",
-    image: "/images/portfolio/project-2.png",
+    image: "/images/portfolio/project-4.png",
     url: "#",
   },
   {
     id: 3,
     title: "Project 3",
     image: "/images/portfolio/project-3.png",
+    url: "#",
+  },
+  {
+    id: 4,
+    title: "Project 2",
+    image: "/images/portfolio/project-2.png",
+    url: "#",
+  },
+  {
+    id: 5,
+    title: "Project 3",
+    image: "/images/portfolio/project-5.png",
     url: "#",
   },
 ];
