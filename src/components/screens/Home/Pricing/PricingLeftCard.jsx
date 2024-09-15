@@ -3,7 +3,7 @@ import Heading from "@/components/common/Heading";
 import Para from "@/components/common/Para";
 const PricingLeftCard = () => {
   return (
-    <div>
+    <div className="flex flex-col justify-between">
       <Heading text={"Pricing"} />
       <div className="mt-4 max-w-[282px]">
         <Para
