@@ -1,12 +1,15 @@
 import Container from "@/components/common/Container";
 import Heading from "@/components/common/Heading";
 import Image from "next/image";
-const PortfolioHeader = () => {
+const PortfolioHeader = ({ handlePrev, handleNext }) => {
   return (
     <div className="pt-[87px]">
       <Container>
         <div className="flex items-start justify-evenly">
-          <button className="size-[78px] rounded-full bg-white border border-white grid place-items-center rotate-180">
+          <button
+            onClick={handlePrev}
+            className="size-[78px] rounded-full bg-white border border-white grid place-items-center rotate-180"
+          >
             <Image
               src={"/icons/common/arrow.svg"}
               alt="Arrow Icon"
@@ -23,7 +26,10 @@ const PortfolioHeader = () => {
               </p>
             </div>
           </div>
-          <button className="size-[78px] rounded-full bg-white border border-white grid place-items-center">
+          <button
+            onClick={handleNext}
+            className="size-[78px] rounded-full bg-white border border-white grid place-items-center"
+          >
             <Image
               src={"/icons/common/arrow.svg"}
               alt="Arrow Icon"
