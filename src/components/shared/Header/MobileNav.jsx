@@ -75,6 +75,24 @@ const MobileNav = () => {
                 </Link>
               </li>
             ))}
+            <li className="mt-4 pt-4 border-t">
+              <Link
+                onClick={handleMenuToggle}
+                href={"#"}
+                className={`hover:text-foreground  text-paragraph`}
+              >
+                Sign In
+              </Link>
+            </li>{" "}
+            <li className="mt-3">
+              <Link
+                onClick={handleMenuToggle}
+                href={"#"}
+                className={`hover:text-foreground  text-white bg-primary rounded-md px-3 py-2 `}
+              >
+                Sign Up
+              </Link>
+            </li>
           </ul>{" "}
         </div>
       </div>
