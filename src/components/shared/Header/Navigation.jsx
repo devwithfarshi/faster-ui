@@ -3,15 +3,12 @@ import Button from "@/components/common/Button";
 import { routeHeaderData } from "@/data/route.data";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-const Navigation = ({ largeNavigationUl }) => {
+const Navigation = () => {
   const pathName = usePathname();
   const isActive = (path) => pathName === path;
   return (
     <>
-      <ul
-        ref={largeNavigationUl}
-        className="hidden w-[499px] lg:flex justify-center items-center gap-12 rounded-[20px] border border-white bg-white/60 h-full "
-      >
+      <ul className="hidden w-[499px] lg:flex justify-center items-center gap-12 h-full ">
         {routeHeaderData.map((item) => (
           <li key={item.id}>
             <Link

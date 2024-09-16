@@ -4,9 +4,8 @@ import Image from "next/image";
 import Navigation from "./Navigation";
 import Link from "next/link";
 import MobileNav from "./MobileNav";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 const Header = () => {
-  const largeNavigationUl = useRef(null);
   const [stickyNav, setStickyNav] = useState(false);
 
   useEffect(() => {
@@ -21,23 +20,19 @@ const Header = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  useEffect(() => {
-    if (!largeNavigationUl?.current) return;
-    const handleLargeNavigationStyle = () => {
-      largeNavigationUl.current.classList.toggle("border");
-      largeNavigationUl.current.classList.toggle("border-white");
-      largeNavigationUl.current.classList.toggle("bg-white/60");
-    };
-    handleLargeNavigationStyle();
-  }, [stickyNav]);
   return (
     <header
-      className={`h-[68px] bg-transparent flex items-center fixed  left-0 duration-300 transition-all  w-full z-40 ${
-        stickyNav
-          ? " border-b shadow-xl border-b-white bg-white/80 backdrop-blur-md top-0"
-          : "top-4"
-      } `}
+      className={`h-[68px] bg-transparent flex items-center fixed left-0 duration-300 transition-all  w-full z-40  ${
+        stickyNav ? "top-0" : "top-4"
+      }`}
     >
+      <div
+        className={`absolute   bg-white/60 backdrop-blur-md h-full left-1/2 -translate-x-1/2  -z-10 duration-300 ${
+          stickyNav
+            ? "w-full rounded-none shadow-xl border-b border-b-white"
+            : " hidden lg:block w-[499px] rounded-[20px] border border-white shadow-none"
+        }`}
+      ></div>
       <Container className="w-full h-full">
         <div className="flex items-center justify-between w-full h-full">
           <figure className="w-[150px] h-[35px] xl:w-[170px] xl:h-[37.29px] relative">
@@ -45,7 +40,7 @@ const Header = () => {
               <Image src="/logo.svg" alt="Logo" fill />
             </Link>
           </figure>
-          <Navigation largeNavigationUl={largeNavigationUl} />
+          <Navigation />
           <MobileNav />
         </div>
       </Container>
