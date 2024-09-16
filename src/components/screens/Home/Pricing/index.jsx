@@ -6,7 +6,7 @@ const Pricing = () => {
   return (
     <section>
       <Container>
-        <div className="flex flex-col md:flex-row gap-8">
+        <div className="flex flex-col md:flex-row md:gap-0 gap-8 lg:gap-8">
           <PricingLeftCard />
           <PricingService />
         </div>

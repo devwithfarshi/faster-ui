@@ -5,17 +5,17 @@ export const routeHeaderData = [
     path: "/",
   },
   {
-    id: 1,
+    id: 2,
     title: "About",
     path: "#",
   },
   {
-    id: 1,
+    id: 3,
     title: "How it Works",
     path: "#",
   },
   {
-    id: 1,
+    id: 4,
     title: "Services",
     path: "#",
   },
