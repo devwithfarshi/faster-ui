@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const ReviewSectionCard = () => {
   return (
-    <div className="my-12 lg:my-[86px] mx-4 max-w-[409px] lg:mx-auto rounded-[22px] p-[21px] bg-white border border-borderSecondary flex items-center gap-[13px] flex-col lg:flex-row">
+    <div className="my-12 lg:my-[86px] mx-4 max-w-[409px] md:mx-auto rounded-[22px] p-[21px] bg-white border border-borderSecondary flex items-center gap-[13px] flex-col md:flex-row">
       <ul className="flex items-center">
         {useReviewers.map((user) => (
           <li

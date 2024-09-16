@@ -12,8 +12,8 @@ const Banner = () => {
       </div>
       <div className="lg:absolute lg:left-1/2 lg:top-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 w-full">
         <Container>
-          <div className="max-w-[764px] mx-auto text-center space-y-9 w-full">
-            <h1 className="font-raleway font-bold text-4xl xl:text-[73.34px] leading-tight">
+          <div className="md:max-w-[600px] xl:max-w-[764px] mx-auto text-center space-y-9 w-full">
+            <h1 className="font-raleway font-bold text-4xl md:text-5xl xl:text-[73.34px] leading-tight">
               Awesome UI Dark Template for Webflow Agency
             </h1>
             <Link href="#" className="inline-block">

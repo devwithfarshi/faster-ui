@@ -8,7 +8,7 @@ const ServiceCard = ({ service }) => {
     <div
       className={`bg-white border border-background  pl-6 pt-[29px] pr-[23px] pb-[34px] rounded-10   ${extraStyle} ${
         (service?.col || service?.row) && service?.col
-          ? "lg:flex flex-col lg:flex-row items-center justify-between"
+          ? "lg:flex flex-col lg:flex-row items-center justify-between gap-3"
           : "lg:flex flex-col lg:gap-10"
       }`}
     >
@@ -29,13 +29,13 @@ const ServiceCard = ({ service }) => {
         </div>
       </div>
       {service?.image && (
-        <div className="h-full w-[238px]">
+        <div className="h-full flex-1 xl:w-[238px]">
           <figure className="relative w-full h-full">
             <Image
               fill
               src={service.image}
               alt={service.title}
-              className="object-contain"
+              className="object-cover"
             />
           </figure>
         </div>
