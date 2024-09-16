@@ -3,8 +3,7 @@ import Container from "@/components/common/Container";
 import Image from "next/image";
 import Navigation from "./Navigation";
 import Link from "next/link";
-import Button from "@/components/common/Button";
-
+import MobileNav from "./MobileNav";
 const Header = () => {
   return (
     <header className="h-[68px] bg-transparent flex items-center absolute left-0 top-4 w-full z-40 ">
@@ -16,21 +15,7 @@ const Header = () => {
             </Link>
           </figure>
           <Navigation />
-          <div className="flex items-center gap-[19px]">
-            <Link
-              href="#"
-              className="text-base text-paragraph hover:text-foreground"
-            >
-              Sign In
-            </Link>
-            <Link href="#">
-              <Button
-                text="Sign up"
-                variant="primary"
-                className="w-[100px] lg:w-[132px] py-3"
-              />
-            </Link>
-          </div>
+          <MobileNav />
         </div>
       </Container>
     </header>

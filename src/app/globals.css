@@ -16,6 +16,6 @@
 
 @layer base {
   body {
-    @apply antialiased font-inter bg-background text-foreground;
+    @apply antialiased font-inter bg-background text-foreground duration-300;
   }
 }
