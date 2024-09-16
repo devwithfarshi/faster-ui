@@ -29,7 +29,7 @@ const ServiceCard = ({ service }) => {
         </div>
       </div>
       {service?.image && (
-        <div className="h-full flex-1 xl:w-[238px]">
+        <div className="h-full flex-1 xl:max-w-[238px]">
           <figure className="relative w-full h-full">
             <Image
               fill
