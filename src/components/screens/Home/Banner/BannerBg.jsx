@@ -1,6 +1,31 @@
+"use client";
+import { gsap } from "gsap";
+import { useEffect, useRef } from "react";
+
 const BannerBg = () => {
+  const svgRef = useRef(null);
+
+  useEffect(() => {
+    const tl = gsap.timeline({ delay: 0.3 });
+    tl.from(svgRef.current, {
+      scale: 0,
+      opacity: 0,
+      duration: 0.5,
+      ease: "power1.out",
+    }).to(
+      svgRef.current,
+      {
+        scale: 1,
+        opacity: 1,
+        duration: 0.5,
+      },
+      "+=1"
+    );
+  }, []);
+
   return (
     <svg
+      ref={svgRef}
       className="w-full lg:w-[580px] xl:w-[650px] 2xl:w-[842px] 2xl:h-[1205px]"
       viewBox="0 0 842 1205"
       fill="none"

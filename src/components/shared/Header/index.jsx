@@ -5,6 +5,7 @@ import Navigation from "./Navigation";
 import Link from "next/link";
 import MobileNav from "./MobileNav";
 import { useEffect, useState } from "react";
+import HeaderBgEl from "./HeaderBgEl";
 const Header = () => {
   const [stickyNav, setStickyNav] = useState(false);
 
@@ -26,13 +27,7 @@ const Header = () => {
         stickyNav ? "top-0" : "top-4"
       }`}
     >
-      <div
-        className={`absolute   bg-white/60 backdrop-blur-md h-full left-1/2 -translate-x-1/2  -z-10 duration-300 ${
-          stickyNav
-            ? "w-full rounded-none shadow-xl border-b border-b-white"
-            : " hidden lg:block w-[499px] rounded-[20px] border border-white shadow-none"
-        }`}
-      ></div>
+      <HeaderBgEl stickyNav={stickyNav} />
       <Container className="w-full h-full">
         <div className="flex items-center justify-between w-full h-full">
           <figure className="w-[150px] h-[35px] xl:w-[170px] xl:h-[37.29px] relative">
