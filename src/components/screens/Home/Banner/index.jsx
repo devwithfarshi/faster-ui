@@ -1,6 +1,5 @@
 import Button from "@/components/common/Button";
 import Container from "@/components/common/Container";
-import Image from "next/image";
 import Link from "next/link";
 import BannerBg from "./BannerBg";
 
