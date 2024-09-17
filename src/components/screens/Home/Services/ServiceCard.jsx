@@ -1,4 +1,4 @@
-"use client"; // For client-side rendering in Next.js
+"use client";
 
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";

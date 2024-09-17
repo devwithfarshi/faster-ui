@@ -1,3 +1,4 @@
+import FadeUpAnimation from "@/components/common/FadeUpAnimation";
 import Para from "@/components/common/Para";
 import Image from "next/image";
 
@@ -14,29 +15,33 @@ const PricingService = () => {
             businesses like yours succeed online."
           />
         </div>
-        <ul className="mt-5 lg:mt-[41px] grid grid-cols-1 md:grid-cols-2 gap-y-[18px]">
-          {[...new Array(6).keys()].map((item) => (
-            <li key={item} className="flex items-center gap-3">
-              <figure className="shrink-0">
-                <Image
-                  width={24}
-                  height={24}
-                  src={"/icons/common/check.svg"}
-                  alt="check Icon"
-                />
-              </figure>
-              <p className="text-sm">Unlimited requests</p>
-            </li>
-          ))}
-        </ul>
+        <FadeUpAnimation>
+          <ul className="mt-5 lg:mt-[41px] grid grid-cols-1 md:grid-cols-2 gap-y-[18px]">
+            {[...new Array(6).keys()].map((item) => (
+              <li key={item} className="flex items-center gap-3">
+                <figure className="shrink-0">
+                  <Image
+                    width={24}
+                    height={24}
+                    src={"/icons/common/check.svg"}
+                    alt="check Icon"
+                  />
+                </figure>
+                <p className="text-sm">Unlimited requests</p>
+              </li>
+            ))}
+          </ul>
+        </FadeUpAnimation>
       </div>
       <div className="bg-background mt-[41px] rounded-10 py-7 px-12 flex items-center justify-between">
-        <p className="text-paragraph text-lg lg:text-xl">
-          <span className="font-bold text-4xl lg:text-6xl text-foreground">
-            $3,250
-          </span>
-          /mo
-        </p>
+        <FadeUpAnimation>
+          <p className="text-paragraph text-lg lg:text-xl">
+            <span className="font-bold text-4xl lg:text-6xl text-foreground">
+              $3,250
+            </span>
+            /mo
+          </p>
+        </FadeUpAnimation>
 
         <button>
           <Image

@@ -9,6 +9,7 @@ const Heading = ({ text }) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.5,
+    rootMargin: "-100px",
   });
 
   useEffect(() => {
