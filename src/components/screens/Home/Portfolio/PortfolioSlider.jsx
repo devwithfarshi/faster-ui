@@ -1,5 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 
 import "swiper/css";
 import { portfolioProjects } from "@/data/portfolio.data";
@@ -13,6 +14,10 @@ const PortfolioSlider = ({ sliderRef }) => {
         spaceBetween={32}
         slidesPerView={1}
         loop={true}
+        modules={[Autoplay]}
+        autoplay={{
+          delay: 5000,
+        }}
         breakpoints={{
           1024: {
             slidesPerView: 2,
