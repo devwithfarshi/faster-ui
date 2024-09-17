@@ -6,12 +6,12 @@ const BannerBg = () => {
   const svgRef = useRef(null);
 
   useEffect(() => {
-    const tl = gsap.timeline({ delay: 0.3 });
+    const tl = gsap.timeline({ delay: 0.2 });
     tl.from(svgRef.current, {
       scale: 0,
       opacity: 0,
       duration: 0.5,
-      ease: "power1.out",
+      ease: "power1.in",
     }).to(
       svgRef.current,
       {
