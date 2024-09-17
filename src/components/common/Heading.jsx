@@ -1,11 +1,4 @@
 "use client";
-// const Heading = ({ text }) => {
-//   return (
-//     <h2 className="font-raleway font-bold text-4xl lg:text-6xl  ">{text}</h2>
-//   );
-// };
-
-// export default Heading;
 
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
@@ -16,6 +9,7 @@ const Heading = ({ text }) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.5,
+    rootMargin: "-100px",
   });
 
   useEffect(() => {
