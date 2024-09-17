@@ -1,15 +1,21 @@
 "use client";
 
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { gsap } from "gsap";
 
 const FadeUpAnimation = ({ children, delay = 0 }) => {
   const elementRef = useRef(null);
+  const [rootMargin, setRootMargin] = useState("-200px");
+  useEffect(() => {
+    if (window.innerWidth <= 1024) {
+      setRootMargin("-75px");
+    }
+  }, []);
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.2,
-    rootMargin: "-200px",
+    rootMargin,
   });
 
   useEffect(() => {
