@@ -39,7 +39,7 @@ const BannerHeading = () => {
     <>
       <h1
         ref={h1Ref}
-        className="font-raleway font-bold text-4xl leading-tight md:text-6xl md:leading-tight xl:text-[73.34px] xl:leading-tight"
+        className="font-raleway font-bold text-4xl md:text-6xl  xl:text-[73.34px] "
       >
         Awesome UI Dark Template for Webflow Agency
       </h1>
